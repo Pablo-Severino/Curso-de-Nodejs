@@ -1,50 +1,69 @@
 <p align="center">
-  <img src="public/nodejs.png" width="140px" />
+  <img src="./docs/Capa do curso.png" width="400" />
 </p>
 
-<h1 align="center">Curso de Nodejs</h1>
-<p align="center">Back-end the site with nodejs.</p>
+Este projeto é uma API Rest em NodeJS e Typescript desenvolvida para fins de aprendizado no curso de **[API Rest em NodeJS e Typescript](https://youtu.be/SVepTuBK4V0)** do canal **[Lucas Souza Dev](https://www.youtube.com/c/LucasSouzaDev)** no YouTube.
 
-<h3 align="center">
-  <a href="https://github.com/maykbrito/mini-video-me/actions/workflows/build.yml" target="_blank">
-    <img alt="Build" src="https://github.com/maykbrito/mini-video-me/actions/workflows/build.yml/badge.svg" />
-  </a>
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-  <a href="https://twitter.com/PabloSeverino10" target="_blank">
-    <img alt="Twitter: PabloSeverino10" src="https://img.shields.io/twitter/follow/PabloSeverino10.svg?style=social" />
-  </a>
-</h3>
 
-<br />
+# Sobre o projeto
 
-## Installation
+No projeto é abordado conceitos importantes sobre o mundo do backend.
 
-Download the latest version from [releases page](https://github.com/maykbrito/mini-video-me/releases) and run it.
+Tem conceitos como:
+- Endpoints
+- Controllers
+- Banco de dados SQL
+- Query builder
+- Migrations de banco
+- Seeds de banco
+- Controle de usuário com email e senha
+- Criptografia de senha
+- Login de usuários
+- Geração e utilização de tokens JWT
+- Validação minuciosa de dados que entram nos endpoints
+- Paginação de consultas
+- Filtros de consultas
+- Testes de código para garantir qualidade das entregas
+- Uso de diferentes bancos de dados com um mesmo código
+- Boas práticas de código, com conceitos do clean code
 
-## Running locally
 
-Clone de repository, open its folder and install dependencies with:
+Está é uma API Rest, então não tem interface nesse repositório. Porém, é possível conectar um interface a ele. A interface está em outro repositório.
 
-```sh
-nodemon app.js
+No repositório **[youtube-curso-react-materialui-typescript](https://github.com/lvsouza/youtube-curso-react-materialui-typescript/tree/integracao-curso-api-node)** á um projeto em react que se conecta com este backend.
+
+
+# Como rodar
+
+Você vai precisar do nodens instalado no seu computador para rodar o projeto.
+
+Clone o repositório:
+```
+$ git clone https://github.com/lvsouza/youtube-curso-react-materialui-typescript.git
 ```
 
-Run it using:
-
-```sh
-nodemon app.js
+Entre na pasta
+```
+$ cd youtube-curso-react-materialui-typescript
 ```
 
-## Author
+Instale as dependências
+```
+$ yarn install
+```
 
-👤 **Pablo Severino**
+Configure as variáveis ambiente, crie o arquivo `.env` na pasta raiz do projeto coloque o conteúdo a seguir dentro
+```
+PORT=3333
+NODE_ENV=dev
 
-* Twitter: [@Pablo Severino](https://twitter.com/PabloSeverino10)
-* Github: [@Pablo Severino](https://github.com/Pablo-Severino)
-* LinkedIn: [@Pablo Severino](https://www.linkedin.com/in/pablo-severino-b23883207)
+IS_LOCALHOST=true
 
-## Show your support
+ENABLED_CORS=[Lista de endereços separados por ";"]
+JWT_SECRET=[Uma string qualquer]
+```
 
-Give a ⭐️ if this project helped you!
+Rode o projeto
+```
+$ yarn start
+```
